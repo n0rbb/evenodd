@@ -8,7 +8,7 @@ n = int(input("Max int: "))
 
 for i in range(n - 1):
     f.write("elif n == {}: \n".format(i + 2))
-    if (i + 2) % 2 == 0:
+    if i % 2 == 0:
         f.write("\t" + "print(\"even\")".strip() + "\n")
     else:
         f.write("\t" + "print(\"odd\")".strip() + "\n")
